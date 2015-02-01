@@ -1,0 +1,30 @@
+{
+  "name": "fluent-dispatch-manager",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify -d -t coffee-reactify --extension=.coffee src/assets/main.coffee -o public/main.js",
+    "watch": "onchange src/assets/**/*.coffee -- npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.4",
+    "body-parser": "^1.11.0",
+    "commander": "^2.6.0",
+    "cookie-parser": "^1.3.3",
+    "express": "^4.11.1",
+    "redis": "^0.12.1",
+    "serve-static": "^1.8.1"
+  },
+  "devDependencies": {
+    "browserify": "^8.1.3",
+    "coffee-reactify": "^2.1.0",
+    "onchange": "0.0.2",
+    "react": "^0.12.2",
+    "react-router": "^0.11.6",
+    "superagent": "^0.21.0"
+  }
+}
